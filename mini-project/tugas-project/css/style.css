@@ -1,0 +1,353 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: #fff;
+
+}
+
+.head {
+    display: flex;
+    height: 100px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e7de9;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    /* border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
+}
+
+.title {
+    color: white;
+    margin-right: 5px;
+    font-size: 30pt;
+    font-weight: bolder;
+}
+
+.sub-title {
+    color: rgba(255, 255, 255, 0.624);
+    margin-left: 5px;
+    font-size: 28pt;
+}
+
+.luas {
+    border: 3px solid;
+    border-color: #1e7de9;
+    height: auto;
+    margin: 30px 6rem;
+    padding-bottom: 100px;
+    border-radius: 0.25rem;
+    margin-top: -1rem;
+}
+
+.luas-item {
+    display: flow-root;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #1e7de9;
+    color: white;
+    padding: 1rem;
+    border: 0px solid;
+    border-color: #33333341;
+    /* border-radius: 0.25rem; */
+}
+
+.satu {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    /* border: 1px solid black; */
+}
+
+.satu span {
+    margin: 0px 55px;
+    /* border: 1px solid green; */
+    font-weight: bold;
+}
+
+.dua {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    /* border: 1px solid black */
+}
+
+.dua span {
+    margin: 0px 55px;
+    /* border: 1px solid green; */
+    font-weight: bold;
+}
+
+.bujur-sangkar {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.persegi {
+    border: 2px red solid;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: -2rem;
+}
+
+.rumus {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    padding: 0px 20px;
+    text-align: left;
+    color: black;
+}
+
+table,
+th,
+td {
+    border: 5px solid white;
+
+}
+
+.tampilan-rumus {
+    border-bottom: 2px rgb(197, 190, 190) solid;
+    padding-bottom: 40px;
+}
+
+.hasil-css {
+    margin-left: 1.5rem;
+}
+
+.footer {
+    background-color: #1e7de9;
+    padding: 20px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #33333305;
+}
+
+.cards_item {
+    /* display: flex; */
+    padding: 1rem;
+    width: auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card_content {
+    padding: 1rem;
+    background-color: white;
+}
+
+.card_title {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+    /* text-transform: capitalize; */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card_text {
+    color: black;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+body {
+    font-family: sans-serif;
+    color: #333;
+    background-color: #33333305;
+}
+
+.bReset {
+    float: right;
+    margin: 0px 25px 0px 0px;
+    margin-top: 30px;
+    padding: 8px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border-color: #dedede;
+    font-size: 11px;
+    font-weight: bold;
+
+}
+
+.bReset:hover {
+    background-color: rgb(206, 138, 13);
+    cursor: pointer;
+}
+
+.right {
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.input {
+    /* margin: 0px; */
+    margin-top: -3rem;
+    padding: 8px;
+    /* height: 25px; */
+    width: 87%;
+    border: 2px solid #dedede;
+    outline: none;
+}
+
+.show {
+    display: none;
+}
+
+.show2 {
+    display: none;
+}
+
+.button {
+    margin: 7px;
+    padding: 12px;
+    border: 0px;
+    background-color: #1e7de9;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 4rem;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #05568b;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid;
+    text-align: center;
+}
+
+form {
+    border: 0px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: auto;
+        margin: auto;
+        background-color: #fff;
+    }
+
+    .header {
+        position: inherit;
+    }
+
+    .title {
+        color: white;
+        margin-right: 3px;
+        font-size: 25pt;
+        font-weight: bolder;
+    }
+
+    .sub-title {
+        color: rgba(255, 255, 255, 0.624);
+        margin-left: 3px;
+        font-size: 24pt;
+    }
+
+    .luas {
+        border: 3px solid;
+        border-color: #1e7de9;
+        height: auto;
+        margin: 30px 3rem;
+        padding-bottom: 100px;
+        border-radius: 0.25rem;
+        margin-top: -1rem;
+    }
+
+    .luas-item {
+        display: flow-root;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background-color: #1e7de9;
+        color: white;
+        padding: 1rem;
+        border: 0px solid;
+        border-color: #33333341;
+        /* border-radius: 0.25rem; */
+    }
+}

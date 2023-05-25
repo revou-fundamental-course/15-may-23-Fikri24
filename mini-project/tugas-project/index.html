@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>KALTIK-Kalkulator Matematik</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="head">
+            <h1 class="title">Katik</h1>
+            <p class="sub-title">Kalkulator Matematik</p>
+        </header>
+
+        <!-- main -->
+        <div class="main">
+            <ul class="cards">
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_content">
+                            <h2 class="card_title">Welcome to Katik</h2>
+                            <p class="card_text">Hai Sobat, Selamat datang di Katik :) <br> Sebuah web apps sederhana
+                                yang berfungsi untuk menghitung
+                                nilai luas dan keliling bangun datar</p>
+                        </div>
+
+                        <div class="luas">
+                            <div class="luas-item">
+                                <h2 class="judul-luas">Luas Persegi</h2>
+                            </div>
+
+                            <div class='satu'>
+                                <p><span>A</span><span>B</span></p>
+                            </div>
+                            <div class='persegi'></div>
+                            <div class='dua'>
+                                <p><span>C</span><span>D</span></p>
+                            </div>
+                            <div class='bujur-sangkar'>
+                                <p>Bujur Sangkar</p>
+                            </div>
+
+                            <!-- <div class='tampilan-rumus'> -->
+                            <div class='rumus'>
+
+                                <table class="tabel-rumus">
+                                    <tr>
+                                        <td>Rumus Luas</td>
+                                        <td>:</td>
+                                        <td>
+                                            <p>L = S x S</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Dimana</p>
+                                        </td>
+                                        <td>
+                                            <p>:</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>L</p>
+                                        </td>
+                                        <td>
+                                            <p>:</p>
+                                        </td>
+                                        <td>
+                                            <p>Luas</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>S</p>
+                                        </td>
+                                        <td>
+                                            <p>:</p>
+                                        </td>
+                                        <td>
+                                            <p>Sisi</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <hr class="href">
+                            <div class="card_content">
+                                <h2 class="card_title hitung">Hitung Luas Persegi</h2>
+                            </div>
+
+
+                            <div class="">
+                                <input type="number" class="input" placeholder="Nilai Sisi" id="">
+                                <div class="hasil-css">
+                                    <div class="hasil "></div>
+                                </div>
+
+                                <div class='rumus show' id="show">
+                                    <table class="tabel-rumus">
+                                        <tr>
+                                            <td>
+                                                <p>Luas</p>
+                                            </td>
+                                            <td>
+                                                <p>:</p>
+                                            </td>
+                                            <td>
+                                                <p>S x S</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Luas</p>
+                                            </td>
+                                            <td>
+                                                <p>:</p>
+                                            </td>
+                                            <td>
+                                                <p><span class="value-sisi"></span> x <span class="value-sisi"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Luas</p>
+                                            </td>
+                                            <td>
+                                                <p>:</p>
+                                            </td>
+                                            <td>
+                                                <p id="luas-persegi"></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <button class="button" onclick="luasPersegi()" id="hitung-luas">Hitung</button>
+                            <br>
+                            <button class="bReset" type="reset" id="reset-luas">Reset</button>
+                        </div>
+
+                        <div class="luas">
+                            <div class="luas-item">
+                                <h2 class="judul-luas">Keliling Persegi</h2>
+                            </div>
+
+                            <div class='satu'>
+                                <p><span>A</span><span>B</span></p>
+                            </div>
+                            <div class='persegi'></div>
+                            <div class='dua'>
+                                <p><span>C</span><span>D</span></p>
+                            </div>
+                            <div class='bujur-sangkar'>
+                                <p>Bujur Sangkar</p>
+                            </div>
+
+                            <!-- <div class='tampilan-rumus'> -->
+                            <div class='rumus'>
+
+                                <table class="tabel-rumus">
+                                    <tr>
+                                        <td>Rumus Keliling</td>
+                                        <td>:</td>
+                                        <td>
+                                            <p>K = 4 x S</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Dimana</p>
+                                        </td>
+                                        <td>
+                                            <p>:</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>K</p>
+                                        </td>
+                                        <td>
+                                            <p>:</p>
+                                        </td>
+                                        <td>
+                                            <p>Keliling</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>S</p>
+                                        </td>
+                                        <td>
+                                            <p>:</p>
+                                        </td>
+                                        <td>
+                                            <p>Sisi</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <hr class="href">
+                            <div class="card_content">
+                                <h2 class="card_title hitung">Hitung Keliling Persegi</h2>
+                            </div>
+
+
+                            <div class="">
+                                <input type="number" class="input" placeholder="Nilai Sisi" id="persegi2">
+                                <div class="hasil-css">
+                                    <div class="hasil "></div>
+                                </div>
+
+                                <div class='rumus show' id="show2">
+                                    <table class="tabel-rumus">
+                                        <tr>
+                                            <td>
+                                                <p>Keliling</p>
+                                            </td>
+                                            <td>
+                                                <p>:</p>
+                                            </td>
+                                            <td>
+                                                <p>4 x S</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Keliling</p>
+                                            </td>
+                                            <td>
+                                                <p>:</p>
+                                            </td>
+                                            <td>
+                                                <p><span>4</span> x <span class="value-sisi2"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Luas</p>
+                                            </td>
+                                            <td>
+                                                <p>:</p>
+                                            </td>
+                                            <td>
+                                                <p id="keliling-persegi"></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <button class="button" onclick="kelilingPersegi()" id="hitung-keliling">Hitung</button>
+                            <br>
+                            <button class="bReset" type="reset" id="reset-keliling">Reset</button>
+                        </div>
+
+                        <hr>
+                    </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer class="footer" id="footer">
+            <p class="copy"> Copyright &copy;<script type="text/javascript">
+                    document.write(new Date().getUTCFullYear());
+                </script> Fikri&trade; </p>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
